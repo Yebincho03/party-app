@@ -1,4 +1,4 @@
-const charactersRouter = require('./characters.js');
+const partyRouter = require('./partys.js');
 
 
-module.exports.charactersRouter = charactersRouter;
+module.exports.partyRouter = partyRouter;
