@@ -1,5 +1,5 @@
 const router = require('express').Router({mergeParams:true});
-const Character = require("../models/Character.js");
+const Party = require("../models/party.js");
 
 
 

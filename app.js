@@ -10,6 +10,8 @@ connection.on('open',()=>{
     app.listen(process.env.PORT || 8080, ()=>console.log("listening"));
 });
 
+require('dotenv').config();
+
 
 app.use(express.static('public'));
 app.use('/',express.static('public'));
@@ -29,6 +31,6 @@ app.get('/', (req, res) => {
 });
 
 
-// app.use('/', routers);
+
 
 

@@ -14,12 +14,6 @@ return (<>
             <div className="partyImg"></div>
             <form>
                 <div className="PartyDetail">
-                    <div> Type:
-                        <input type="radio" id="private" name="private" value="private" />
-                        <label for="private">private</label>
-                        <input type="radio" id="open" name="open" value="open" />
-                        <label for="open">open</label>
-                    </div>
                     <label> Party Title : 
                         <input type="text" id="partyName" name="partyName" />
                     </label>

@@ -18,6 +18,8 @@
 .env.test.local
 .env.production.local
 
+DB_CONNECTION=mongodb+srv://yebin:TmNESjKZTiL5LraG@cluster0.t9swd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
