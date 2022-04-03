@@ -9,7 +9,7 @@ const LoginComponent = props => {
 
     
 return (<>
-        <div className="login">
+        <div className="loginWrapper">
             
         </div>
    </> );
