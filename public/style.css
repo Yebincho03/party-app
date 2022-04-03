@@ -1,0 +1,56 @@
+.App{
+    padding: 50px;
+}
+.headerWrapper{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.siteLogo{
+    color: black;
+}
+.nav-bar{
+    display: flex;
+    
+}
+.navMenu{
+    padding: 10px;
+}
+.partyImg{
+    background-color: grey;
+    width: 400px;
+    height:400px;
+    
+}
+li{
+    list-style: none;
+}
+.partyListImg{
+    background-color: grey;
+    width: 200px;
+    height:200px;
+}
+.PartyDetail{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.userProfile{
+    padding: 10px;
+    line-height: 40px;
+}
+.partyType{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+
+}
+.partyList{
+    display: flex;
+    flex-direction: column;
+}
