@@ -10,6 +10,10 @@ const PartyDetail = props => {
     
 return (<>
         <div className="PartyDetailContainer">
+            <div className="homeBanner">
+                <div className="bannerTitle">VANCOUVER EVENTS</div>
+                <img className="bannerImage" src="./image/fireworks.jpg"/>
+            </div>
         <div className="partyImg">img</div>
             <div className="partyDetail">
                 <div className="party-title">title</div>

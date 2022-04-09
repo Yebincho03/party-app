@@ -9,6 +9,7 @@ import CreateParty from './CreateParty';
 import PartyDetail from './PartyDetail';
 import HostPartyDetail from './HostPartyDetail';
 import LoginComponent from './LoginComponent';
+import CreateAccountComponent from './CreateAccountComponent';
 
 
 
@@ -27,6 +28,7 @@ const App = props => {
                         <Route index element={<HomeComponent />} />
                         <Route path="/" element={<HomeComponent />} />
                         <Route path="login" element={<LoginComponent />} /> 
+                        <Route path="register" element={<CreateAccountComponent />} /> 
                         <Route path="profile" element={<ProfileComponent />} />     
                         <Route path="party" element={<CreateParty />} />  
                         <Route path="detail" element={<PartyDetail />} />       

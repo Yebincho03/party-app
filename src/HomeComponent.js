@@ -5,40 +5,43 @@ import axios from "axios";
 
 
 const HomeComponent = props => {
+    let [partyList, setPartyList] = useState([]);
 
-axios.get('/api/v1/getParty').then((res) => {
-    console.log(res.data)
+    useEffect(()=>{
+        axios.get('/api/v1/getParty').then((res) => {
+            console.log(res.data)
+            setPartyList(res.data)
+        
+        }).catch(error => console.error(error))
 
-  }).catch(error => console.error(error))
+    },[]);
     
 return (<>
         <div className="home">
             <div className="homeWrapper">
+                <div className="homeBanner">
+                    <div className="bannerTitle">VANCOUVER EVENTS</div>
+                    <img className="bannerImage" src="./image/fireworks.jpg"/>
+                </div>
                 <div className="openPartyList">
-                    open party list
+                    <h1>VANCOUVER EVENTS</h1>
                     <ul>
-                        <li>
-                            <img className="partyListImg" />
+                    {partyList.map(party =>  (
+                        <li key={party._id} >
+                            <img className="partyListImg" src={party.imageLink}/>
                             <div className="partyInfo">
-                                <a href="/detail">
-                                first partyyy
-                                </a>
-                                <span className="location"></span>
-                                <span className="date">2022/10/21</span>
-                                <span className="time">6pm</span>
+                                <h3><a href="/detail">
+                                {party.title}
+                                </a></h3>
+                                <span className="location">Location : {party.location}</span>
+                                <span className="date">Date : {party.date.split('T')[0]}</span>
+                                <span className="time">Time : {party.time}</span>
+                                <button className="goingBtn">Going</button>
                             </div>
                         </li>
-                        <li>
-                            <img className="partyListImg" />
-                            <div className="partyInfo">
-                                <a href="/detail">
-                                second partyyy
-                                </a>
-                                <span className="location"></span>
-                                <span className="date">2022/10/21</span>
-                                <span className="time">6pm</span>
-                            </div>
-                        </li>
+                    ))}
+                        
+                        
                     </ul>
                 </div>
             </div>

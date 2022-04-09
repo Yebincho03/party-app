@@ -11,24 +11,25 @@ return (<>
         <div className="headerWrapper">
             <div className="siteLogo">
                 <a href="/">
-                    <h1>@PARTY@</h1>
+                    <h2>PARTY CALENDAR</h2>
                 </a>
             </div>
             <div className="nav-bar">
                 <div className="navMenu">
-                    <a href="/party">
-                        <h2>Host party</h2>
-                    </a>
+                {localStorage.userInfo ?
+                    (<a href="/party">
+                        <h4>Host party</h4>
+                    </a>):null}
                 </div>
                 <div className="navMenu">
-                    <a href="/login">
-                        <h2>Login</h2>
-                    </a>
-                </div>
-                <div className="navMenu">
-                    <a href="/profile">
-                        <h2>Profile</h2>
-                    </a>
+                    {localStorage.userInfo ?
+                    (<a href="/profile">
+                        <h4>Profile</h4>
+                    </a>)
+                    :
+                    (<a href="/login">
+                        <h4>Login</h4>
+                    </a>) }
                 </div>
             </div>
         </div>

@@ -20,6 +20,14 @@ const PartySchema = new Schema({
         type: String,
         required:true
     
+    },
+    imageLink: {
+        type: String,
+        required: true
+    },
+    hostingId:{
+        type: String,
+        required: true
     }
 });
 
