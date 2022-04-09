@@ -25,7 +25,7 @@ API documentation
 
 'api/vi/profile/:id' GET This API get one user registered in this application by the id 
 
-'/api/v1/profile/hosting/:id' GET This API is used to get the current user hosting party list
+'/api/v1/profile/hosting/:id' GET This API is used to get the current user hosting party list by hosting id
 
 '/api/v1/login' POST This API is used to check the user information matches the user information on the database. 
 
